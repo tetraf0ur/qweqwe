@@ -30,6 +30,6 @@ router.get("/hello", async function (req, res) {
   res.send("hello");
 });
 
-app.listen(port, function () {
+app.listen(process.env.PORT || port, function () {
   console.log("Server is running on Port: " + port);
 });
